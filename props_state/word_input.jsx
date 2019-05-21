@@ -7,9 +7,19 @@ class WordInput extends React.Component {
         this.updateWord = this.updateWord.bind(this);
     }
 
+    // updateWord(event) {
+    //     this.setState({ word: event.currentTarget.value });
+    //     console.log(this.state.word)
+    // }
+
     updateWord(event) {
-        this.setState({ word: event.currentTarget.value });
+        this.setState({ word: event.currentTarget.value }, () => {
+            console.log(this.state.word);
+        });
     }
+    // setState takes an optional callback as a second argument and 
+    // doesn't run until the state has been updated.
+    // Using this.state inside of the callback will actually reflect the changes that your call to setState hoped to create.
 
     render() {
         return (
