@@ -67,3 +67,18 @@ useEffect(() => {
         window.removeEventListener('click', clicked)
     }
 }, [])
+
+
+// CUSTOM HOOKS
+
+// A custom hook is just a regular function. 
+// However, its name must begin with the word, use and if needed, it may call any of the React hooks within itself.
+// 🐢 custom hook - name starts with "use" (useMedium)
+useMedium(() => {
+    const URI = "https://some-path-api";
+    // 🦄 custom hook can use any of the default 
+    // React hooks - this is NOT compulsory.
+    useEffect(() => {
+        fetch(URI)
+    }, [])
+});
