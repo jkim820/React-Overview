@@ -46,6 +46,7 @@ class Clock extends React.Component {
         this.setState({
             date: new Date()
         });
+        // correct way to modify state and re-render
     }
 
 
