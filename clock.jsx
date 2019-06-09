@@ -81,7 +81,9 @@ ReactDOM.render(
 
 // State Updates May Be Asynchronous
 
-// Use a second form of setState() that accepts a function rather than an object. 
+// Use a second form of setState() that accepts a FUNCTION rather than an OBJECT. 
+// That function will receive the previous state as the first argument, 
+// and the props at the time the update is applied as the second argument:
 this.setState((state, props) => ({
     counter: state.counter + props.increment
 }));
@@ -92,7 +94,10 @@ this.setState(function (state, props) {
     };
 });
 
-// Wrong
+// WRONG
 this.setState({
     counter: this.state.counter + this.props.increment,
 });
+
+
+// **You can use stateless components inside stateful components, and vice versa.
