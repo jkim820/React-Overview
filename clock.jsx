@@ -76,3 +76,23 @@ ReactDOM.render(
 // This time, this.state.date in the render() method will be different, and so the render output will include the updated time. React updates the DOM accordingly
 // 5. If the Clock component is ever removed from the DOM, 
 // React calls the componentWillUnmount() lifecycle method so the timer is stopped.
+
+// ----------
+
+// State Updates May Be Asynchronous
+
+// Use a second form of setState() that accepts a function rather than an object. 
+this.setState((state, props) => ({
+    counter: state.counter + props.increment
+}));
+// OR 
+this.setState(function (state, props) {
+    return {
+        counter: state.counter + props.increment
+    };
+});
+
+// Wrong
+this.setState({
+    counter: this.state.counter + this.props.increment,
+});
