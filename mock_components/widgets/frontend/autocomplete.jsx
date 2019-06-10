@@ -55,7 +55,8 @@ class Autocomplete extends React.Component {
                     <input
                         value={this.state.inputValue}
                         onChange={this.handleInput}
-                        placeholder='Search...' />
+                        placeholder='Search...' 
+                        />
                     <ul>
                         <ReactCSSTransitionGroup
                             transitionName='auto' // the name that's used to create all of the transition classes
