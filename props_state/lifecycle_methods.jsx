@@ -65,13 +65,14 @@ class LifeCycle extends React.Component {
 // This is where component’s state changes and thus, RE-RENDERING takes place.
 // The data of the component (its state & props) will update in response to user events such as clicking, typing, etc. 
 
-// * shouldComponentUpdate() -> 
+// ** shouldComponentUpdate() -> 
 // This method determines whether the component should be updated or not. By default, it’ll return true.
 // USE CASES of shouldComponentUpdate():
 // 1. If you want to re-render the component on a condition.
 // 2. If you want to only re-render your component when there is a change in prop. 
 // It receives arguments like nextProps and nextState.
 // which help us decide whether to re-render by doing a comparison with the current prop value.
+// *** This method will help optimize performance and runtime in React.
 
 // * componentWillUpdate() -> 
 // CALLED before re-rendering our component. Called once after shouldComponentUpdate().

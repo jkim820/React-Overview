@@ -12,5 +12,7 @@ React Interview Prep - https://medium.com/bb-tutorials-and-thoughts/learn-enough
 
 React Lifecycle Methods - https://reactjs.org/docs/state-and-lifecycle.html
 
+React Optimizing Performance - https://reactjs.org/docs/optimizing-performance.html
+
 React Hooks - https://medium.freecodecamp.org/learn-the-basics-of-react-hooks-in-10-minutes-b2898287fe5d
 React Hooks - https://react-hooks-cheatsheet.com/
