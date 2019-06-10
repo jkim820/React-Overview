@@ -13,12 +13,12 @@
     background-position: center;
 }
 
-.auto > input{
+.auto > input {
     margin: 10px 30px 0 30px;
     border: 1px solid black;
 }
 
-.auto li{
+.auto li {
     cursor: pointer;
     list-style-type: square;
 }
