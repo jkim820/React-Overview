@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Clock from './clock';
-import AutoComplete from './auto';
+import AutoComplete from './autocomplete';
 
 const names = [
     'Abba',

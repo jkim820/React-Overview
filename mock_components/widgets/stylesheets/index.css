@@ -1,0 +1,38 @@
+/* AutoComplete */
+
+.auto {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 191px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-color: violet;
+    background-image: url(https://hd.unsplash.com/6/blurred_lines.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+ .auto-enter {
+    opacity: 0.01;
+    transform: translateY(500%);
+ }
+
+ .auto-enter.auto-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+ }
+
+ .auto-leave {
+    opacity: 1;
+    transform: translateY(0);
+ }
+
+ .auto-leave.auto-leave-active {
+    opacity: 0.01;
+    transform: translateY(500%);
+    transition: opacity 500ms, transform 500ms;
+ }
