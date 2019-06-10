@@ -25,3 +25,25 @@
     { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" }
 ];
 
+// 1. Draw boxes around every component and sub-component to differentiate what to work with
+// Single Responsibility Principle - technique to determine what should be its own component
+
+// There are FIVE components in this app
+// 1. FilterableProductTable(orange): contains the entirety of the example
+// 2. SearchBar(blue): receives all user input
+// 3. ProductTable(green): displays and filters the data collection based on user input
+// 4. ProductCategoryRow(turquoise): displays a heading for each category
+// 5. ProductRow(red): displays a row for each product
+
+
+// Components that appear within another component in the mock should appear as a child in the hierarchy:
+
+//  FilterableProductTable
+//      SearchBar
+//      ProductTable
+//          ProductCategoryRow
+//          ProductRow
+
+
+// Build A Static Version in React
+// ** State is reserved only for interactivity - data that changes over time
