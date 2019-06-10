@@ -84,13 +84,13 @@ ReactDOM.render(
 // Use a second form of setState() that accepts a FUNCTION rather than an OBJECT. 
 // That function will receive the previous state as the first argument, 
 // and the props at the time the update is applied as the second argument:
-this.setState((state, props) => ({
-    counter: state.counter + props.increment
+this.setState((prevState, props) => ({
+    counter: prevState.counter + props.increment
 }));
 // OR 
-this.setState(function (state, props) {
+this.setState(function (prevState, props) {
     return {
-        counter: state.counter + props.increment
+        counter: prevState.counter + props.increment
     };
 });
 

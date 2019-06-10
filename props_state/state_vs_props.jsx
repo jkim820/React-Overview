@@ -6,3 +6,30 @@
 // State is limited to class components.
 // Props are set by the parent component.
 // State is updated by event handlers.
+
+
+// Using State
+// When using State, we need the state of a component to always exist — 
+// so we need to set an initial state.
+
+// class MyClass extends React.Component {
+//  constructor(props){
+//     super(props);
+//     this.state = { attribute: "value" };
+//  }
+// } 
+
+// Updating State
+// * State should never be explicitly updated.
+// WRONG -> this.state.attribute = "changed-value";
+// CORRECT -> this.setState({attribute: “changed-value”}); -> setState() = built-in React method
+// It takes a single parameter and expects an object containing our set of values to be updated.
+// The method will update our state and then call the render() method to re-render the page.
+
+
+// Setting Multiple States
+// We’re taking our previous component state and props, as a parameter, and then we’re updating the total
+
+// this.setState((prevState, props) => ({
+//     total: prevState.count + props.diff
+// }));
