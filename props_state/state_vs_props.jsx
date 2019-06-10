@@ -38,3 +38,6 @@
 
 
 // Using Props
+// Props are properties of a component that are passed in at the time of initialization (constructor).
+// When new props are received by a component, lifecycle methods will be triggered to handle the change 
+// and (by default) a re-rendering of the component.
