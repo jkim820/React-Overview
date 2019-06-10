@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Clock from './clock';
 import AutoComplete from './auto';
 
 const names = [
@@ -17,6 +18,7 @@ const names = [
 function Root() {
     return (
         <div>
+            <Clock />
             <div className='interactive'>
                 <AutoComplete names={names} />
             </div>
