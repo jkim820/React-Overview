@@ -45,6 +45,10 @@
 //          ProductRow
 
 
+// STEP 2
 // Build A Static Version in React
 // ** State is reserved only for interactivity - data that changes over time
 // ** The components should only have render() methods since this is a static version of your app
+
+
+// STEP 3
